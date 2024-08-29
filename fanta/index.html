@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"/>
+    <link rel="stylesheet" href="https://www.unpkg.com/shery-js@1.0.0-alpha.0.5/dist/Shery.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="home">
+            <div id="nav">
+                <img src="data:image/png;base64,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" alt="">
+                <div id="right">
+                    <a href="">our showreel</a>
+                    <a href="">menu</a>
+                    <i class="ri-menu-line magnet"></i>
+                </div>
+            </div>
+            <div id="homemain">
+                <h5>We make it happen.</h5>
+                <div class="headings">
+                    <h1>Websites</h1>
+                    <h1>Apps</h1>
+                    <h1>Branding</h1>
+                </div>
+            </div>
+            <div id="homelast">
+                <p>Leading digital agency with solid design and development<br>expertise. We build readymade websites,
+                    mobile<br>applications, and elaborate online business services.</p>
+            </div>
+        </div>
+        <div id="featured">
+            <div class="fheading">
+                <h1>featured</h1>
+                <h1>projects</h1>
+            </div>
+            <div id="fimages">
+                <div id="fleft">
+                    <div class="fleftlm">
+                        <h3>Riyadh</h3>
+                        <h1>Official website of Riyadh, Saudi Arabia's capital</h1>
+                        <h4>design, development, product</h4>
+                    </div>
+                    <div class="fleftlm">
+                        <h3>Ferrumpipe</h3>
+                        <h1>Galvanized steel metal frame manufacturer</h1>
+                        <h4>branding, design, development, product</h4>
+                    </div>
+                    <div class="fleftlm">
+                        <h3>Nana Asia</h3>
+                        <h1>Asia's digital magazine, powered by women</h1>
+                        <h4>web, design, development</h4>
+                    </div>
+                    <div class="fleftlm">
+                        <h3>Sleepiest</h3>
+                        <h1>Sleep app helps millions fall asleep every night</h1>
+                        <h4>branding, design, mobile, product</h4>
+                    </div>
+                    <div class="fleftlm">
+                        <h3>FlipaClip</h3>
+                        <h1>The best tool for frame-by-frame animation</h1>
+                        <h4>web, development, product</h4>
+                    </div>
+                    <div class="fleftlm last">
+                        <h3>uLesson</h3>
+                        <h1>Online platform for distance learning</h1>
+                        <h4>web, mobile, product</h4>
+                    </div>
+                </div>
+                <div id="fright">
+                    <div class="images">
+
+                    </div>
+                </div>
+            </div>
+            <div class="btn">
+                <button>view all projects</button>
+            </div>
+        </div>
+        <div id="dev">
+            <h1>Development and design resources</h1>
+            <p>We regularly release design courses, offer advice to newbie designers, walk you through creating awesome
+                effects, and share source files.</p>
+        </div>
+        <div id="slides">
+            <div class="slide">
+                <div class="img">
+                    <img src="https://cdn.cuberto.com/cb/upload/40bf072f506912f62412b0de381e350d.png" alt="">
+                </div>
+                <div class="tag">Design Course</div>
+                <h3>How To Make Epic Website // Frontend development</h3>
+            </div>
+            <div class="slide">
+                <div class="img">
+                    <img src="https://cdn.cuberto.com/cb/upload/885fbbc555395f745746b23b73f539f5.png" alt="">
+                </div>
+                <div class="tag">Dev Source</div>
+                <h3>Cuberto Mouse Follower</h3>
+            </div>
+            <div class="slide">
+                <div class="img">
+                    <img src="https://cdn.cuberto.com/cb/upload/99d9ee549abf01940d4b1cfa04734b7d.jpg" alt="">
+                </div>
+                <div class="tag">Dev Source</div>
+                <h3>Making switch with SVG Display</h3>
+            </div>
+        </div>
+        <div class="btn">
+            <button class="magnet">view all resources</button>
+        </div>
+        <div id="ins">
+            <h1>New day - new inspiro</h1>
+        </div>
+        <div id="new">
+            <div class="move">
+                <div class="img1">
+                    <img src="https://scontent.cdninstagram.com/v/t51.29350-15/366189545_1275211306457222_4164023990692190125_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=1f7K6elqu4sAX-FJ1Ln&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfBLTWUdwuWuCGd3UJIHczIUimi9m94r6w0MttkrTg7zfA&oe=65927479" alt="">
+                </div>
+                <i class="ri-instagram-line"> cubertodesign</i>
+                <h3>In collabaration with Vogel, who help us with illustrations, working on the redesign of the online education website which goal is to enhance nursing practice</h3>
+            </div>
+            <div class="move">
+                <div class="imgs">
+                    <img src="https://cdn.dribbble.com/userupload/9242886/file/original-cc855605d8a0338df48357d153d43322.png?resize=400x300" alt="">
+                </div>
+                <i class="ri-dribbble-line"> cuberto</i>
+                <h3>PuntoPogo Mobile Version</h3>
+            </div>
+            <div class="move">
+                <div class="img1">
+                    <img src="https://scontent.cdninstagram.com/v/t51.36329-15/365948502_1348991022638575_8999773601977757398_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=yZyk2-_31JkAX_IlpBY&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfBrx1TZi5QB6IAGjN-0SwNgBqwFYm4gfiOSxYk3wuHrCw&oe=65935155" alt="">
+                </div>
+                <i class="ri-instagram-line"> cubertodesign</i>
+                <h3>We've prepared a deatailed case study of Zelt project</h3>
+            </div>
+            <div class="move">
+                <div class="imgs">
+                    <img src="https://scontent.cdninstagram.com/v/t51.29350-15/366189545_1275211306457222_4164023990692190125_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=1f7K6elqu4sAX-FJ1Ln&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfBLTWUdwuWuCGd3UJIHczIUimi9m94r6w0MttkrTg7zfA&oe=65927479" alt="">
+                </div>
+                <i class="ri-dribbble-line"> cuberto</i>
+                <h3>Nursececlub Site Redesign</h3>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"
+        integrity="sha512-auFmPm+de880vk/c+bgBmuOnQ7BM28z7zPWmepVgX8737t75OHZjElOnQqERwP8cE4DIyCJ+gb1kE0b/eLWcnA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://www.unpkg.com/shery-js@1.0.0-alpha.0.5/dist/Shery.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
