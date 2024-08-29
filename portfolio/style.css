@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+    color: whitesmoke;
+}
+section{
+    min-height: 100vh;
+    overflow: hidden;
+}
+.home-content{
+    height: 100vh;
+    width: 100vw;
+}
